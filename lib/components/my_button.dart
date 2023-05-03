@@ -11,7 +11,7 @@ class MyButton extends StatelessWidget {
     return ElevatedButton(
       style: ElevatedButton.styleFrom(
         shape: const StadiumBorder(),
-        padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 10),
+        padding: const EdgeInsets.symmetric(horizontal: 60, vertical: 10),
         backgroundColor: const Color.fromARGB(255, 144, 103, 198),
       ),
       onPressed: onTap,

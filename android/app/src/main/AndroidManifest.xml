@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.emoji_slot_machine">
    <application
-        android:label="emoji_slot_machine"
+        android:label="Emoji Slot"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

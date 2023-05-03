@@ -3,16 +3,16 @@ import 'components/my_button.dart';
 import 'dart:math';
 
 var data = {
-  0: '🐱',
-  1: '🍏',
-  2: '🧁',
-  3: '💣',
-  4: '🏆',
-  5: '🪐',
-  6: '🌸',
+  0: '☠️',
+  1: '🧠',
+  2: '😺',
+  3: '🐾',
+  4: '🍓',
+  5: '🍟',
+  6: '📚',
 };
-var firstRandomNr = 1;
-var secondRandomNr = 6;
+var firstRandomNr = 0;
+var secondRandomNr = 0;
 var thirdRandomNr = 0;
 
 class HomePage extends StatefulWidget {
@@ -40,14 +40,14 @@ class _HomePageState extends State<HomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(data[firstRandomNr]!, style: const TextStyle(fontSize: 80)),
-            const SizedBox(width: 30),
+            const SizedBox(width: 40),
             Text(data[secondRandomNr]!, style: const TextStyle(fontSize: 80)),
-            const SizedBox(width: 30),
+            const SizedBox(width: 40),
             Text(data[thirdRandomNr]!, style: const TextStyle(fontSize: 80)),
           ],
         ),
-        const SizedBox(height: 160),
-        MyButton(onTap: onTap, text: 'Play'),
+        const SizedBox(height: 300),
+        MyButton(onTap: onTap, text: 'GO'),
       ],
     );
   }
