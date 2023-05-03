@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'components/my_button.dart';
 import 'dart:math';
 
 var data = {
@@ -22,7 +23,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  void onPlayPressed() {
+  void onTap() {
     setState(() {
       firstRandomNr = (Random().nextInt(6));
       secondRandomNr = (Random().nextInt(6));
@@ -46,21 +47,7 @@ class _HomePageState extends State<HomePage> {
           ],
         ),
         const SizedBox(height: 160),
-        ElevatedButton(
-          style: ElevatedButton.styleFrom(
-            shape: const StadiumBorder(),
-            padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 10),
-            backgroundColor: const Color.fromARGB(255, 144, 103, 198),
-          ),
-          onPressed: onPlayPressed,
-          child: const Text(
-            'Play',
-            style: TextStyle(
-              fontSize: 16,
-              color: Color.fromARGB(255, 252, 255, 252),
-            ),
-          ),
-        ),
+        MyButton(onTap: onTap, text: 'Play'),
       ],
     );
   }

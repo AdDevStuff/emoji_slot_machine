@@ -12,6 +12,7 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       home: Scaffold(
+        backgroundColor: Color.fromARGB(255, 202, 196, 206),
         body: SafeArea(
           child: Center(
             child: HomePage(),
